@@ -1,0 +1,238 @@
+[
+  {
+    "id": 101,
+    "tipo": "Casa completa",
+    "titulo": "Encantadora casa con jardín en Springfield",
+    "direccion": "Calle Falsa 123",
+    "ciudad": "Springfield",
+    "precio_por_noche": 85,
+    "moneda": "USD",
+    "habitaciones": 3,
+    "baños": 2,
+    "huespedes": 6,
+    "superficie": {
+      "cubierta": 120,
+      "total": 300
+    },
+    "amenidades": [
+      "WiFi",
+      "Estacionamiento gratuito",
+      "Cocina",
+      "Pileta",
+      "Parrilla"
+    ],
+    "disponible": true,
+    "calificacion": 4.8
+  },
+  {
+    "id": 102,
+    "tipo": "Departamento privado",
+    "titulo": "Moderno depto en el centro de Shelbyville",
+    "direccion": "Av. Central 456",
+    "ciudad": "Shelbyville",
+    "precio_por_noche": 45,
+    "moneda": "USD",
+    "habitaciones": 1,
+    "baños": 1,
+    "huespedes": 2,
+    "superficie": {
+      "cubierta": 70,
+      "total": 75
+    },
+    "amenidades": [
+      "Aire acondicionado",
+      "Ascensor",
+      "Cocina equipada"
+    ],
+    "disponible": false,
+    "calificacion": 4.5
+  },
+  {
+    "id": 103,
+    "tipo": "Casa completa",
+    "titulo": "Amplia casa familiar en Capital Federal",
+    "direccion": "Los Álamos 789",
+    "ciudad": "Capital Federal",
+    "precio_por_noche": 120,
+    "moneda": "USD",
+    "habitaciones": 4,
+    "baños": 3,
+    "huespedes": 8,
+    "superficie": {
+      "cubierta": 180,
+      "total": 400
+    },
+    "amenidades": [
+      "Jardín",
+      "Terraza",
+      "Garage doble",
+      "WiFi"
+    ],
+    "disponible": true,
+    "calificacion": 4.9
+  },
+  {
+    "id": 104,
+    "tipo": "Estudio",
+    "titulo": "Estudio funcional en La Plata",
+    "direccion": "Diagonal Norte 111",
+    "ciudad": "La Plata",
+    "precio_por_noche": 35,
+    "moneda": "USD",
+    "habitaciones": 1,
+    "baños": 1,
+    "huespedes": 2,
+    "superficie": {
+      "cubierta": 50,
+      "total": 55
+    },
+    "amenidades": [
+      "Gimnasio",
+      "WiFi",
+      "Seguridad 24hs"
+    ],
+    "disponible": true,
+    "calificacion": 4.3
+  },
+  {
+    "id": 105,
+    "tipo": "Casa completa",
+    "titulo": "Casa de campo con pileta en Pilar",
+    "direccion": "Ruta 8 km 45",
+    "ciudad": "Pilar",
+    "precio_por_noche": 100,
+    "moneda": "USD",
+    "habitaciones": 3,
+    "baños": 2,
+    "huespedes": 6,
+    "superficie": {
+      "cubierta": 130,
+      "total": 600
+    },
+    "amenidades": [
+      "Pileta",
+      "Jardín",
+      "Quincho",
+      "WiFi"
+    ],
+    "disponible": false,
+    "calificacion": 4.7
+  },
+  {
+    "id": 106,
+    "tipo": "Departamento privado",
+    "titulo": "Depto céntrico con terraza en Rosario",
+    "direccion": "Calle San Martín 321",
+    "ciudad": "Rosario",
+    "precio_por_noche": 50,
+    "moneda": "USD",
+    "habitaciones": 2,
+    "baños": 1,
+    "huespedes": 4,
+    "superficie": {
+      "cubierta": 65,
+      "total": 70
+    },
+    "amenidades": [
+      "Balcón",
+      "Terraza común",
+      "WiFi"
+    ],
+    "disponible": true,
+    "calificacion": 4.4
+  },
+  {
+    "id": 107,
+    "tipo": "Casa completa",
+    "titulo": "Casa con parrilla cerca del mar en Mar del Plata",
+    "direccion": "Av. Mitre 222",
+    "ciudad": "Mar del Plata",
+    "precio_por_noche": 95,
+    "moneda": "USD",
+    "habitaciones": 3,
+    "baños": 2,
+    "huespedes": 6,
+    "superficie": {
+      "cubierta": 140,
+      "total": 350
+    },
+    "amenidades": [
+      "Parrilla",
+      "Garage",
+      "Jardín"
+    ],
+    "disponible": true,
+    "calificacion": 4.6
+  },
+  {
+    "id": 108,
+    "tipo": "Departamento entero",
+    "titulo": "Departamento moderno en Rosario con pileta",
+    "direccion": "Boulevard Oroño 878",
+    "ciudad": "Rosario",
+    "precio_por_noche": 70,
+    "moneda": "USD",
+    "habitaciones": 2,
+    "baños": 2,
+    "huespedes": 4,
+    "superficie": {
+      "cubierta": 75,
+      "total": 80
+    },
+    "amenidades": [
+      "Cochera",
+      "Sum",
+      "Piscina en terraza",
+      "WiFi"
+    ],
+    "disponible": false,
+    "calificacion": 4.8
+  },
+  {
+    "id": 109,
+    "tipo": "Casa completa",
+    "titulo": "Hermosa casa con patio en Tigre",
+    "direccion": "Pasaje El Ceibo 15",
+    "ciudad": "Tigre",
+    "precio_por_noche": 110,
+    "moneda": "USD",
+    "habitaciones": 4,
+    "baños": 3,
+    "huespedes": 7,
+    "superficie": {
+      "cubierta": 160,
+      "total": 500
+    },
+    "amenidades": [
+      "Pileta",
+      "Patio",
+      "Cochera",
+      "WiFi"
+    ],
+    "disponible": true,
+    "calificacion": 4.9
+  },
+  {
+    "id": 110,
+    "tipo": "Departamento privado",
+    "titulo": "Cómodo depto en zona céntrica de Córdoba",
+    "direccion": "Calle Rivadavia 2000",
+    "ciudad": "Córdoba",
+    "precio_por_noche": 48,
+    "moneda": "USD",
+    "habitaciones": 2,
+    "baños": 1,
+    "huespedes": 3,
+    "superficie": {
+      "cubierta": 60,
+      "total": 65
+    },
+    "amenidades": [
+      "Ascensor",
+      "Lavadero común",
+      "WiFi"
+    ],
+    "disponible": true,
+    "calificacion": 4.5
+  }
+]
