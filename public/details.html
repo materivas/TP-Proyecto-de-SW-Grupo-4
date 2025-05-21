@@ -11,12 +11,18 @@
 <body>
 
     <header>
-        <img src="assets/img/logo.png" alt="" width="100">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" width="100"></a>
     </header>
 
     <div class="container">
         <!-- titulo -->
-        <h1>Moderno y Cálido departamento en Palermo Hollywood</h1>
+        <div class="title-section">
+            <h1>Moderno y Cálido departamento en Palermo Hollywood</h1>
+            <button type="button" class="share-btn"
+                onclick="navigator.share ? navigator.share({title: document.title, url: window.location.href}) : alert('Función de compartir no soportada en este navegador.')">
+                <img src="assets/img/share.svg" alt="Compartir" style="width:24px; height:24px; vertical-align:middle;">
+            </button>
+        </div>
 
         <div class="img-container">
             <!-- imagen -->
@@ -43,29 +49,56 @@
             </div>
         </div>
 
-        <div class="description">
-            <h2>Descripción</h2>
-            <!-- Descripción -->
-            <p>Departamento moderno y luminoso ubicado en el barrio de Palermo Hollywood, el barrio más artístico y
-                pintoresco de la ciudad lleno de arte, cultura y gastronomía.
-                El departamento está completamente amoblado y equipado tanto para estancias largas como para estancias
-                reducidas, además esta muy bien comunicado con los medios de transporte público, lo que lo hace ideal
-                para explorar la ciudad!</p>
-            <h3>Comodidades</h3>
-            <!-- Comodidades -->
-            <ul>
-                <li>Wi-Fi gratuito</li>
-                <li>Aire acondicionado</li>
-                <li>Calefacción</li>
-                <li>Cocina equipada</li>
-                <li>Lavadora</li>
-                <li>TV por cable</li>
-            </ul>
+        <div class="container-2">
+
+            <div class="description">
+                <h2>Descripción</h2>
+                <!-- Descripción -->
+                <p>Departamento moderno y luminoso ubicado en el barrio de Palermo Hollywood, el barrio más artístico y
+                    pintoresco de la ciudad lleno de arte, cultura y gastronomía.
+                    El departamento está completamente amoblado y equipado tanto para estancias largas como para
+                    estancias
+                    reducidas, además esta muy bien comunicado con los medios de transporte público, lo que lo hace
+                    ideal
+                    para explorar la ciudad!</p>
+                <h3>Comodidades</h3>
+                <!-- Comodidades -->
+                <ul>
+                    <li>Wi-Fi gratuito</li>
+                    <li>Aire acondicionado</li>
+                    <li>Calefacción</li>
+                    <li>Cocina equipada</li>
+                    <li>Lavadora</li>
+                    <li>TV por cable</li>
+                </ul>
+            </div>
+
+            <div class="reserve">
+                <form action="resumenReserva.html" method="get" class="reserve-form">
+
+                    <label for="fecha-inicio">Fecha de entrada:</label>
+                    <input type="date" id="fecha-inicio" name="fecha_inicio" required>
+
+                    <label for="fecha-fin">Fecha de salida:</label>
+                    <input type="date" id="fecha-fin" name="fecha_fin" required>
+
+                    <label for="huespedes">Huéspedes:</label>
+                    <select id="huespedes" name="huespedes" required>
+                        <option value="" disabled selected>Seleccione cantidad</option>
+                        <option value="1">1 huésped</option>
+                        <option value="2">2 huéspedes</option>
+                        <option value="3">3 huéspedes</option>
+                        <option value="4">4 huéspedes</option>
+                        <option value="5">5 huéspedes</option>
+                        <option value="6">6 huéspedes</option>
+                    </select>
+
+                    <button type="submit" class="reserve-btn">Reservar</button>
+                </form>
+            </div>
         </div>
 
-        <div class="reserve">
-            <button type="button" class="reserve-btn">Reservar</button>
-        </div>
+
 
         <div class="rating">
             <span>Califica esta propiedad:</span>
@@ -83,6 +116,7 @@
             </form>
         </div>
     </div>
+
 
 </body>
 
