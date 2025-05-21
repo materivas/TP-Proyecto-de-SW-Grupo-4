@@ -1,28 +1,14 @@
 [
-  {
-    "id": 101,
-    "tipo": "Casa completa",
-    "titulo": "Encantadora casa con jardín en Springfield",
-    "direccion": "Calle Falsa 123",
-    "ciudad": "Springfield",
-    "precio_por_noche": 85,
-    "moneda": "USD",
-    "habitaciones": 3,
-    "baños": 2,
-    "huespedes": 6,
-    "superficie": {
-      "cubierta": 120,
-      "total": 300
-    },
-    "amenidades": [
-      "WiFi",
-      "Estacionamiento gratuito",
-      "Cocina",
-      "Pileta",
-      "Parrilla"
-    ],
-    "disponible": true,
-    "calificacion": 4.8
+   {
+    "id": 1,
+    "titulo": "Moderno y Cálido departamento en Palermo Hollywood",
+    "ciudad": "Palermo Hollywood",
+    "tipo": "Departamento",
+    "precio_por_noche": 120,
+    "fecha": "Nov 12-17",
+    "imagen": "https://a0.muscache.com/im/pictures/hosting/Hosting-1223058150117672620/original/83b4e80f-3669-49fc-af32-7bb4adb1ac66.jpeg",
+    "calificacion": 4.8,
+    "disponible": true
   },
   {
     "id": 102,
