@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb - Publicar propeidad</title>
+    <link rel="icon" href="./assets/img/airbnb-logo-mini.jpg">
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #ff385c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e03150;
+        }
+
+        #mensajeExito {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/img/logo.png" alt="" width="100"></a>
+    </header>
+    
+    <form id="form-publicar">
+        <h2>Publicar una propiedad</h2>
+
+        <div id="mensajeExito">✅ ¡Propiedad publicada con éxito!</div>
+
+        <label for="titulo">Título de la publicación</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <label for="imagen">Imagen (1 sola)</label>
+        <input type="file" id="imagen" accept="image/*">
+
+        <label for="habitaciones">Cantidad de habitaciones</label>
+        <input type="number" id="habitaciones" name="habitaciones" min="0" required>
+
+        <label for="banios">Cantidad de baños</label>
+        <input type="number" id="banios" name="banios" min="0" required>
+
+        <label for="huespedes">Cantidad de huéspedes</label>
+        <input type="number" id="huespedes" name="huespedes" min="1" required>
+
+        <label for="comodidades">Comodidades (separadas por coma)</label>
+        <input type="text" id="comodidades" name="comodidades">
+
+        <label for="precio">Precio por noche ($)</label>
+        <input type="number" id="precio" name="precio" min="0" required>
+
+        <button type="submit">Publicar</button>
+    </form>
+
+    <!-- conexion js -->
+    <script src="./js/publicar.js"></script>
+</body>
+
+</html>
