@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumen de Pago</title>
+  <link rel="stylesheet" href="./css/payment_summary.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Resumen de tu pago</h1>
+
+    <div class="resumen-box">
+      <p><strong>Alojamiento:</strong> Departamento en Palermo Hollywood</p>
+      <p><strong>Check-in:</strong> 10/06/2025</p>
+      <p><strong>Check-out:</strong> 15/06/2025</p>
+      <p><strong>Noches:</strong> 5</p>
+      <p><strong>Huéspedes:</strong> 2</p>
+      <p><strong>Precio por noche:</strong> $120 USD</p>
+      <p><strong>Subtotal:</strong> $600 USD</p>
+      <p><strong>Impuestos y cargos:</strong> $30 USD</p>
+      <hr>
+      <p class="total"><strong>Total a pagar:</strong> $630 USD</p>
+    </div>
+
+    <div class="botones">
+      <button id="confirmarPago">Confirmar pago</button>
+      <button id="descargarComprobante">Descargar comprobante</button>
+    </div>
+
+    <p id="mensajeConfirmacion"></p>
+  </div>
+
+  <script src="./js/payment_summary.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago con tarjeta de crédito</title>
+  <link rel="stylesheet" href="./css/credit_card.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pago con tarjeta de crédito</h1>
+    <form id="credit-card-form">
+      <label>
+        Número de tarjeta
+        <input type="text" name="numero" maxlength="19" placeholder="1234 5678 9012 3456" required />
+      </label>
+
+      <div class="form-row">
+        <label>
+          Vencimiento
+          <input type="text" name="vencimiento" placeholder="MM/AA" maxlength="5" required />
+        </label>
+        <label>
+          CVV
+          <input type="text" name="cvv" placeholder="123" maxlength="4" required />
+        </label>
+      </div>
+
+      <label>
+        Nombre del titular
+        <input type="text" name="titular" placeholder="Juan Pérez" required />
+      </label>
+
+      <label>
+        Código postal
+        <input type="text" name="codigo_postal" placeholder="12345" required />
+      </label>
+
+      <label>
+        País
+        <select name="pais" required>
+          <option value="">Seleccionar país</option>
+          <option value="AR">Argentina</option>
+          <option value="MX">México</option>
+          <option value="ES">España</option>
+          <option value="US">Estados Unidos</option>
+        </select>
+      </label>
+
+      <button type="submit">Pagar ahora</button>
+    </form>
+    <p id="mensaje"></p>
+  </div>
+
+
+  <script src="./js/credit_card.js"></script>
+</body>
+</html>
