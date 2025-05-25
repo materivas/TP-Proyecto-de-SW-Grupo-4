@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis de Reservas</title>
+    <link rel="stylesheet" href="css/listadoReservas.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/logo.png" alt="" width="100"></a>
+    </header>
+
+    <h1>Mis Reservas</h1>
+
+    <div class="container">
+        <div class="reserva">
+            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1223058150117672620/original/83b4e80f-3669-49fc-af32-7bb4adb1ac66.jpeg" alt="Moderno y Cálido departamento en Palermo Hollywood">
+            <div>
+                <h2>Moderno y Cálido departamento en Palermo Hollywood</h2>
+                <p>Días alquilados: 1 al 7 de Junio</p>
+                <p><strong>Precio:</strong> $600 </p>
+                <p><strong>Huéspedes:</strong> 2 personas</p>
+                <button class="boton-cancelar" onclick="mostrarMotivos(this)">Cancelar</button>
+                <div class="motivos">
+                    <p>Selecciona un motivo de cancelación:</p>
+                    <ul>
+                        <li><input type="radio" name="motivo1" value="Problemas personales"> Problemas personales</li>
+                        <li><input type="radio" name="motivo1" value="Cambio de planes"> Cambio de planes</li>
+                        <li><input type="radio" name="motivo1" value="Emergencia imprevista"> Emergencia imprevista</li>
+                        <li><input type="radio" name="motivo1" value="Encontré otra opción"> Encontré otra opción</li>
+                    </ul>
+                    <button class="boton-confirmar" onclick="confirmarCancelacion(this)">Confirmar cancelación</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserva">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/301315288.jpg?k=b90f6b5b104fde18f0ee6e67a3aa9669168d6d208426606f0ea58df3d7b159bd&o=&hp=1" alt="Departamento con Vista al Río en Puerto Madero">
+            <div>
+                <h2>Departamento con Vista al Río en Puerto Madero</h2>
+                <p>Días alquilados: 12 al 25 de Agosto</p>
+                <p><strong>Precio:</strong> $1200 </p>
+                <p><strong>Huéspedes:</strong> 2 personas</p>
+                <button class="boton-cancelar" onclick="mostrarMotivos(this)">Cancelar</button>
+                <div class="motivos">
+                    <p>Selecciona un motivo de cancelación:</p>
+                    <ul>
+                        <li><input type="radio" name="motivo2" value="Problemas personales"> Problemas personales</li>
+                        <li><input type="radio" name="motivo2" value="Cambio de planes"> Cambio de planes</li>
+                        <li><input type="radio" name="motivo2" value="Emergencia imprevista"> Emergencia imprevista</li>
+                        <li><input type="radio" name="motivo2" value="Encontré otra opción"> Encontré otra opción</li>
+                    </ul>
+                    <button class="boton-confirmar" onclick="confirmarCancelacion(this)">Confirmar cancelación</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserva">
+            <img src="https://static1.sosiva451.com/88453951/626703a9-630a-4a26-bb5d-ee3ed9386a3e_u_medium.jpg" alt="Monoambiente en San Telmo">
+            <div>
+                <h2>Monoambiente en San Telmo</h2>
+                <p>Días alquilados: 20 al 25 de Noviembre</p>
+                <p><strong>Precio:</strong> $500 ARS</p>
+                <p><strong>Huéspedes:</strong> 1 persona</p>
+                <button class="boton-cancelar" onclick="mostrarMotivos(this)">Cancelar</button>
+                <div class="motivos">
+                    <p>Selecciona un motivo de cancelación:</p>
+                    <ul>
+                        <li><input type="radio" name="motivo3" value="Problemas personales"> Problemas personales</li>
+                        <li><input type="radio" name="motivo3" value="Cambio de planes"> Cambio de planes</li>
+                        <li><input type="radio" name="motivo3" value="Emergencia imprevista"> Emergencia imprevista</li>
+                        <li><input type="radio" name="motivo3" value="Encontré otra opción"> Encontré otra opción</li>
+                    </ul>
+                    <button class="boton-confirmar" onclick="confirmarCancelacion(this)">Confirmar cancelación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mensaje" class="mensaje-confirmacion">
+        <p>¡Gracias! Tu cancelación ha sido registrada correctamente.</p>
+    </div>
+
+    <script>
+        function mostrarMotivos(boton) {
+            var motivos = boton.nextElementSibling;
+            motivos.style.display = motivos.style.display === "none" ? "block" : "none";
+        }
+
+        function confirmarCancelacion(boton) {
+            var reserva = boton.closest('.reserva');
+            var radios = reserva.querySelectorAll('input[type="radio"]');
+            var motivoSeleccionado = "";
+            
+            radios.forEach(function(radio) {
+                if (radio.checked) {
+                    motivoSeleccionado = radio.value;
+                }
+            });
+
+            if (motivoSeleccionado) {
+                reserva.style.opacity = "0";
+                setTimeout(() => reserva.style.display = "none", 500);
+
+                var mensaje = document.getElementById("mensaje");
+                mensaje.style.display = "block";
+            } else {
+                alert("Por favor, selecciona un motivo antes de confirmar.");
+            }
+        }
+    </script>
+
+</body>
+</html>
