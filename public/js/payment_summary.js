@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById("confirmarPago").addEventListener("click", function () {
-  document.getElementById("mensajeConfirmacion").innerText = "¡Pago confirmado exitosamente!";
+  //document.getElementById("mensajeConfirmacion").innerText = "¡Pago confirmado exitosamente!";
+  alert("¡Pago confirmado exitosamente!");
+  window.location.href = "index.html"; // Redirigir al inicio después de confirmar el pago
 });
 
 document.getElementById("descargarComprobante").addEventListener("click", function () {

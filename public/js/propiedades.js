@@ -27,7 +27,7 @@ if (primera) {
         <h3 class="card-title">${primera.titulo}</h3>
       </a>
       <p class="card-date">${primera.fecha}</p>
-      <p class="card-price"><strong>$${primera.precio_por_noche}</strong> por noche</p>
+      <p class="card-price"><strong>$${primera.precio_por_noche} USD</strong> por noche</p>
       ${!primera.disponible ? '<div class="no-disponible">No disponible</div>' : ''}
       <a href="details.html?id=${primera.id}" class="card-button">Ver detalles</a>
     </div>
@@ -50,6 +50,7 @@ if (primera) {
     const card = document.createElement('div');
     card.className = 'card';
 
+    // puse un link para que lleve a una vista de detalle con esos datos
     card.innerHTML = `
       <div class="card-badge">⭐ 5.0</div>
       <img src="${p.imagen}" alt="${p.titulo}">
@@ -58,7 +59,12 @@ if (primera) {
           <span class="card-location">Tu propiedad</span>
           <span class="card-type">${p.habitaciones} hab / ${p.banios} baños</span>
         </div>
+        
+        <a href="details_.html" class="card-title-link">
         <h3 class="card-title">${p.titulo}</h3>
+        </a>
+
+        
         <p class="card-date">¡Recién publicada!</p>
         <p class="card-price"><strong>$${p.precio}</strong> por noche</p>
       </div>
