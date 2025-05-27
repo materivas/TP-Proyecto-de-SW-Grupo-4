@@ -60,7 +60,7 @@ if (primera) {
           <span class="card-type">${p.habitaciones} hab / ${p.banios} baños</span>
         </div>
         
-        <a href="details_.html" class="card-title-link">
+        <a href="detaiIs.html" class="card-title-link">
         <h3 class="card-title">${p.titulo}</h3>
         </a>
 
